@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/ohadd83/prod_cicd.git'
+                git 'git@github.com/ohadd83/prod_cicd.git'
             }
         }
 
