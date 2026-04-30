@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-#        stage('Checkout') {
-#            steps {
-#                git 'git@github.com/ohadd83/prod_cicd.git'
-#            }
-#        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t myapp:latest .'
